@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css"/>
+    <link rel="stylesheet"href="https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css"/>
+    <link rel="stylesheet" href="cart.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="home">
+        <div class="nav-vector">
+            <img src="../img/Vector 2.png" class="Vector">
+        </div>
+        <nav>
+            <div class="logo">
+                <img src="../img/Logo.png" alt="logo" />
+              </div>
+            <ul >
+                <li>
+                  <a href="#"> Home</a>
+                </li>
+                <li>
+                  <a href="#"> Catalogue</a>
+                </li>
+                <li>
+                  <a href="#"> Contact Us</a>
+                </li>
+                <li>
+                    <a href="#"> Help</a>
+                  </li>
+            </ul>
+            <div class="cart-profile">
+                <a href="#" alt="cart" class="cart"  
+                  ><i class="fi fi-rr-shopping-cart" ></i
+                ></a>
+            <a href="#" class="btn-register">Register</a>
+            </div>
+        </nav>
+        <div class="MYCART" >My Cart <hr id="underline" /></div>
+    
+               
+        <table class="container">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th style="text-align: left;padding-bottom: 50px;padding-left: 20px;"><h1>Product</h1></th>
+                    <th style="padding-bottom: 50px;"><h1>Price</h1></th>
+                    <th style="padding-bottom: 50px;"><h1>Color</h1></th>
+                    <th style="padding-bottom: 50px;"><h1>Delete</h1></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="picture">
+                        <img  src="../img/yollwecar.png" class="img-product"  >
+                    </td>
+                    <td  class="name"> <span>Audi</span>
+        
+                        <p>Code: #716537</p>
+                        <p>Engine Copacity: 6000cc</p>
+                    </td>
+                    <td class="center">$ 240.55</td>
+                    <td class="center">black</td>
+                    <td class="center" id="x"><a href="#" class="remove">x</a></td>
+                </tr>
+                <tr>
+                    <td class="picture">
+                        <img src="../img/red car.png " alt="" srcset="" >
+                    </td>
+                    <td class="name"><span>Honda</span>
+                        <p>Code: #716537</p>
+                        <p>Engine Copacity: 6000cc</p>
+                    </td>
+                    <td class="center">$ 240.55</td>
+                    <td class="center">black</td>
+                    <td class="center" id="x"><a href="#" class="remove">x</a></td>
+                </tr>
+                <tr>
+                    <td class="picture">
+                        <img src="../img/black car.png" alt="" srcset="" >
+                    </td>
+                    <td class="name"><span>BMW</span>
+                        <p>Code: #716537</p>
+                        <p>Engine Copacity: 6000cc</p>
+                    </td>
+                    <td class="center">$ 240.55</td>
+                    <td class="center">black</td>
+                    <td class="center" id="x"><a href="#" class="remove">x</a></td>
+                </tr>
+            <tr>
+                <td class="picture">
+                    <img src="../img/gray car.png" alt="" srcset="" >
+                </td>
+                <td class="name"><span>Volvo</span>
+                    <p>Code: #716537</p>
+                        <p>Engine Copacity: 6000cc</p>
+                </td>
+                <td class="center">$ 240.55</td>
+                <td class="center">black</td>
+                <td class="center" id="x"><a href="#" class="remove">x</a></td>
+                </tr>
+                 </tbody>
+        </table>
+
+        <script>
+            // Remove Items From Cart
+          $('a.remove').click(function(){
+            event.preventDefault();
+            $( this ).parent().parent().parent().hide( 400 );
+           
+          })         
+          </script>
+</body>
+</html>
